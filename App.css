@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #a00f80;
+}
+
+.App-header {
+  background: linear-gradient(to right, #6d0080, #b3009e);
+  color: rgb(145, 7, 113);
+  text-align: center;
+  padding: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(127, 3, 81, 0.1);
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-inline-size: 1200px;
+  margin: 2rem auto;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.form-section, .list-section {
+  flex: 1 1 45%;
+  background: #026913;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+form input, form select, form textarea {
+  inline-size: 100%;
+  padding: 10px;
+  margin: 0.5rem 0 1rem;
+  border-radius: 5px;
+  border: 1px solid #ec1bd4;
+  font-size: 1rem;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+.button {
+  background-color: #ff00f2;
+  color: rgb(134, 183, 10);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background-color: #b05911;
+}
+
+table {
+  inline-size: 100%;
+  border-collapse: collapse;
+  margin-block-start: 1rem;
+}
+
+th, td {
+  text-align: start;
+  padding: 12px;
+  border-block-end: 1px solid #921212;
+}
+
+th {
+  background-color: #b43abd;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .form-section, .list-section {
+    flex: 1 1 100%;
+  }
+}

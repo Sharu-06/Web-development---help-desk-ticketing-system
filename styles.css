@@ -1,0 +1,38 @@
+:root{
+  --indigo:#3b3ad5;
+  --teal:#0bb5a8;
+  --coral:#ff7043;
+  --bg:#f6fbfb;
+  --muted:#6b7280;
+}
+
+body { background:var(--bg); font-family: Inter, system-ui, Arial; color:#102a43; }
+.topbar { background: linear-gradient(90deg,var(--indigo), #5b6bf7); color:white; padding:0.5rem 0; }
+.brand { font-weight:700; color:#fff; letter-spacing:0.3px; }
+.btn-ghost { background:transparent; color:#fff; border:1px solid rgba(255,255,255,0.12); padding:6px 10px; border-radius:6px; }
+.footer { background:#fff; border-top:1px solid #e6edf3; padding:14px 8px; text-align:center; color:var(--muted); }
+
+.auth-wrapper { display:flex; align-items:center; justify-content:center; min-height:60vh; }
+.auth-card { width:100%; max-width:420px; background:white; padding:20px; border-radius:10px; box-shadow:0 8px 30px rgba(18,38,63,0.06); }
+
+.btn-accent { background: linear-gradient(90deg,var(--teal), #38c7b2); color:white; border:none; }
+.card { background:white; border-radius:10px; }
+.table thead { background:linear-gradient(90deg,#eef2ff,white); }
+
+/* status badges */
+.badge { padding:0.35rem 0.6rem; border-radius:6px; font-weight:600; font-size:0.8rem; }
+.status-new { background:#e6fffa; color:#065f46; border:1px solid #c6f6e6; }
+.status-in_progress { background:#fff7ed; color:#b45309; border:1px solid #ffe3b8; }
+.status-resolved { background:#eef2ff; color:#2b3ab4; border:1px solid #d6d8ff; }
+.status-closed { background:#f8fafc; color:#6b7280; border:1px solid #e6eef6; }
+
+/* small helpers */
+.muted { color:var(--muted); }
+.shadow-sm { box-shadow:0 6px 20px rgba(12,34,56,0.06); }
+.table-responsive { overflow:auto; }
+
+/* responsive layout tweaks */
+@media (max-width: 768px) {
+  .container { padding-left:12px; padding-right:12px; }
+  .auth-card { margin: 12px; }
+}
